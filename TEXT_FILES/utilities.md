@@ -131,6 +131,24 @@ Modelling can be broken down in 3 parts, choosing and training a model, tuning a
 
 #### 3 sets- Training, Validation and test sets
 
+Splitting the data is the most important concept in machine learning.
+
+Since the idea behind machine learning algorithms is to gain insights on some future data, its important to test how well they would go in the real world. To do this its common to split the data into 3 sets, the training data, validation data, and test data.
+
+- Training set is where the model will be trained;
+
+- Validation set is where the model will be tuned, and improved;
+
+- Test set is where the model will be tested;
+
+This is very much like students practicing for an exam. First you have the course materials (training set) where you'll familiarize  and learn the concepts. Then you'll do a practice exam (validation set) where you'll test your knowledge, and find out what are the concepts you need to re-visit to do well on the final exam. Finally there is the final exam in it of itself (test set), where all of the learning that you have done throughout the semester, and practiced in the practice exam, will be tested in questions that you've never seen, but practiced with similar ones.
+
+The in the machine learning field, the process described above is called ***Generalization***. It's the ability for a machine learning model to perform well on data it hasn't seen before because of what it has learned on other dataset.
+
+Where can this go wrong? Going back to the example, if the practice exam is the same as the final exam, everyone will have already seen it, they will answer all of the questions with ease, and therefore, everyone will have top marks. But this isn't good, at least in Machine Learning. The analogy serves to show that, if the final exam is done in the same data, the results will be 100% or close to this mark, but in the end, the machine hasn't learned, it has memorized the data, and may not do as well with new data, as if the data it has trained and validated on is different from the test data.
+
+A good split of data would be something around 70%-80% for the Training set, 10%-15% for the validation set, and 10%-15% for the test data. To split the data properly, first shuffle the data, then split the sets.
+
 ### 6- Experiments
 
 What have we tried/what else can we try to improve?
