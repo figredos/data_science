@@ -22,6 +22,8 @@ This file's purpose is to write things before adding them to their specific file
     - [5- Modelling](#5--modelling)
       - [Training model - 3 sets](#training-model---3-sets)
       - [Choosing model](#choosing-model)
+      - [Tuning](#tuning)
+      - [Comparison](#comparison)
     - [6- Experiments](#6--experiments)
 
 ## To put in file
@@ -154,8 +156,47 @@ A good split of data would be something around 70%-80% for the Training set, 10%
 
 It's important to know what type of model works best for different types of data. For structured data, decision trees such as Random Forest, and gradient boosting algorithms such as CatBoost and XGBoost tend to work best. For unstructured data, Deep learning, neural Networks, and transfer learning tend to work best.
 
-The idea is to line up the inputs and outputs. In other words, find the patterns (*x*) and predict the target variable (*y*). The goal here is to minimize time between experiments
+The idea is to line up the inputs and outputs. In other words, find the patterns (*x*) and predict the target variable (*y*).
+
+The goal here is to minimize time between experiments. If a model is taking a very long time and only slightly improves accuracy, its worth considering that model as a less viable option, because machine learning is a very iterative process, so the less time spent between tests, the better.
+
+A few things to remember when building machine learning models are, some models work better than others on different problems, don't be afraid to try things, start small and build up (add complexity) as you need.
+
+#### Tuning
+
+When the training step has concluded, the next one is tuning. As previously mentioned, this tuning will be done in the validation set.
+
+Machine learning models have hyper-parameters that can be adjusted, for instance a decision tree has different amounts of leaves, or a neural network has different amounts of layers. A models first results aren't its last, whenever validating a model, it's very unlikely that the first results of a model will be its last. This is basically because of what we just said, models will be tuned to find the best fit for them. This tuning can take place not only on the validation set, but also on the training set.
+
+#### Comparison
+
+"How will our model perform in the real world?"
+
+This is where you'll get an indication on how the model will perform in the real world. This step is where the model will perform on data that isn't present in the training and validation sets, giving it a good metric on how well it generalizes, based on the validation and training sets.
+
+A good model will yield similar results on the training, validation and test sets, although it's not uncommon to see a small decline in the training and validation set to the test set. Concerns should be raised whenever the results from the training and validation sets are much higher than the test set (UnderFitting), or when the test set achieves higher accuracy than the validation and training sets (OverFitting).
+
+- Good model: Goldilocks zone (ideal results)
+
+| Data set | Performance |
+|----------|-------------|
+| Training | 98%         |
+| Test     | 96%         |
+
+- UnderFitting: Data mismatch, try a more advanced model, increase model hyperparameter, reduce amount of features, train longer;
+  
+| Data set | Performance |
+|----------|-------------|
+| Training | 64%         |
+| Test     | 47%         |
+
+- OverFitting: Data leakage, collect more data, try a less advanced model;
+
+| Data set | Performance |
+|----------|-------------|
+| Training | 93%         |
+| Test     | 99%         |
 
 ### 6- Experiments
 
-What have we tried/what else can we try to improve?
+"What have we tried/what else can we try next?"
