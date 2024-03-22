@@ -5,3 +5,11 @@
 # Data Science
 
 This repository serves as a notebook for Data Science studies. It contains text files with core concepts, and code for implementation of those concepts.
+
+## Contents
+
+- [Machine learning 101](/TEXT_FILES/machine_learning_101.md): Introductory concepts to Machine Learning and Data Science
+
+- [Framework](/TEXT_FILES/framework.md): Introduction to the framework used in Machine Learning and Data Science.
+
+- [Utilities](/TEXT_FILES/utilities.md)
