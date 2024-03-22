@@ -20,7 +20,8 @@ This file's purpose is to write things before adding them to their specific file
     - [3- Evaluation](#3--evaluation)
     - [4- Features](#4--features)
     - [5- Modelling](#5--modelling)
-      - [3 sets- Training, Validation and test sets](#3-sets--training-validation-and-test-sets)
+      - [Training model - 3 sets](#training-model---3-sets)
+      - [Choosing model](#choosing-model)
     - [6- Experiments](#6--experiments)
 
 ## To put in file
@@ -127,9 +128,9 @@ A feature works best in a machine learning algorithm if many of the samples have
 
 "Based on our problem and data, what model should we use?"
 
-Modelling can be broken down in 3 parts, choosing and training a model, tuning a model, and model comparison.
+Modelling can be broken down in 4 parts, training a model, choosing a model, tuning a model, and model comparison.
 
-#### 3 sets- Training, Validation and test sets
+#### Training model - 3 sets
 
 Splitting the data is the most important concept in machine learning.
 
@@ -141,13 +142,19 @@ Since the idea behind machine learning algorithms is to gain insights on some fu
 
 - Test set is where the model will be tested;
 
-This is very much like students practicing for an exam. First you have the course materials (training set) where you'll familiarize  and learn the concepts. Then you'll do a practice exam (validation set) where you'll test your knowledge, and find out what are the concepts you need to re-visit to do well on the final exam. Finally there is the final exam in it of itself (test set), where all of the learning that you have done throughout the semester, and practiced in the practice exam, will be tested in questions that you've never seen, but practiced with similar ones.
+This is very much like students practising for an exam. First you have the course materials (training set) where you'll familiarize  and learn the concepts. Then you'll do a practice exam (validation set) where you'll test your knowledge, and find out what are the concepts you need to re-visit to do well on the final exam. Finally there is the final exam in it of itself (test set), where all of the learning that you have done throughout the semester, and practised in the practice exam, will be tested in questions that you've never seen, but practised with similar ones.
 
 The in the machine learning field, the process described above is called ***Generalization***. It's the ability for a machine learning model to perform well on data it hasn't seen before because of what it has learned on other dataset.
 
 Where can this go wrong? Going back to the example, if the practice exam is the same as the final exam, everyone will have already seen it, they will answer all of the questions with ease, and therefore, everyone will have top marks. But this isn't good, at least in Machine Learning. The analogy serves to show that, if the final exam is done in the same data, the results will be 100% or close to this mark, but in the end, the machine hasn't learned, it has memorized the data, and may not do as well with new data, as if the data it has trained and validated on is different from the test data.
 
 A good split of data would be something around 70%-80% for the Training set, 10%-15% for the validation set, and 10%-15% for the test data. To split the data properly, first shuffle the data, then split the sets.
+
+#### Choosing model
+
+It's important to know what type of model works best for different types of data. For structured data, decision trees such as Random Forest, and gradient boosting algorithms such as CatBoost and XGBoost tend to work best. For unstructured data, Deep learning, neural Networks, and transfer learning tend to work best.
+
+The idea is to line up the inputs and outputs. In other words, find the patterns (*x*) and predict the target variable (*y*). The goal here is to minimize time between experiments
 
 ### 6- Experiments
 
