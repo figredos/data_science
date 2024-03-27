@@ -8,8 +8,10 @@ This repository serves as a notebook for Data Science studies. It contains text 
 
 ## Contents
 
-- [Machine learning 101](/TEXT_FILES/machine_learning_101.md): Introductory concepts to Machine Learning and Data Science
+- [Machine learning 101](/TEXT_FILES/machine_learning_101.md): Introductory concepts to Machine Learning and Data Science.
 
 - [Framework](/TEXT_FILES/framework.md): Introduction to the framework used in Machine Learning and Data Science.
+
+- [Environment Setup](/TEXT_FILES/environment_setup.md): Setting up tools that will be used throughout this repository.
 
 - [Utilities](/TEXT_FILES/utilities.md)
