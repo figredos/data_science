@@ -3,10 +3,13 @@
 Pandas is a powerful open-source software library written specifically for Python for data analysis and manipulation tasks. It's widely considered one of the fundamental tools in the data science toolkit.
 
 - [Pandas](#pandas)
+  - [Documentation](#documentation)
   - [Basics](#basics)
   - [Select and View Data](#select-and-view-data)
   - [Manipulate data](#manipulate-data)
   - [Pandas Practice](#pandas-practice)
+
+## Documentation
 
 For information on all of pandas functionalities, follow [this link](https://pandas.pydata.org/docs/) for its documentation.
 
