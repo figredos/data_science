@@ -4,6 +4,10 @@ Numpy (Numerical Python), is a fundamental open-source python library for workin
 
 This is one of the most popular libraries when it comes to Data Science and Machine Learning. There are two main reasons why this library is so popular when it comes to these fields, firstly, many of the functionalities offered by numpy are written in C, making them much faster that python. Secondly, the fact that numpy deals with numbers makes it easier to turn the data into numbers and then manage these numbers.
 
+## Documentation
+
+For information on all of NumPy's functionalities, follow [this link](https://numpy.org/doc/stable/) for its documentation.
+
 ## Basics
 
 In [this file](/numpy/notebooks/basics.ipynb) some of the core concepts and structures in numpy are covered.
